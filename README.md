@@ -29,7 +29,7 @@
 To run the project locally, follow these steps:
 1. Clone the repository:<br>
    ```bash
-   git clone https://github.com/yourusername/shipment-management-system.git<br>
+   git clone https://github.com/Shelbybosss/JsonPowerDB-ShipmentManagement-Form.git<br>
    cd shipment-management-system
 
 ## <h2 style="font-size: 24px;">ScreenShots</h2>
