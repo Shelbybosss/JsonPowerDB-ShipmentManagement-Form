@@ -41,3 +41,129 @@ To run the project locally, follow these steps:
 ![Screenshot 2024-07-10 180728](https://github.com/Shelbybosss/JsonPowerDB-ShipmentManagement-Form/assets/102911609/e5a47a7f-f508-4c88-9cc8-803881545748)
 <br>
 ![Screenshot 2024-07-10 180804](https://github.com/Shelbybosss/JsonPowerDB-ShipmentManagement-Form/assets/102911609/b713dca4-5717-496b-948f-319fc1517809)
+
+## <h2 style="font-size: 24px;">CRUD And usefull commands</h2>
+<pre>
+```GET
+{
+    "token": "90931714|-31949214282530301|90963650",
+    "cmd": "GET",
+    "dbName": "Employee",
+    "rel": "EmpRel",
+    "jsonStr":{
+      "name": "Suhas"
+    }
+}
+```
+</pre>
+
+<pre>
+```PUT
+{
+  "token": "90931714|-31949214282530301|90963650",
+  "cmd": "PUT",
+  "dbName": "Employee",
+  "rel": "EmpRel",
+  "jsonStr": {
+    	"name": "Suhas",
+        "email": "suhasmagar273@gmail.com"
+  }
+}
+```
+</pre>
+
+<pre>
+```REMOVE
+{
+    "token": "90931714|-31949214282530301|90963650",
+    "cmd": "REMOVE",
+    "dbName": "Employee",
+    "rel": "EmpRel",
+    "record": 2,
+    "jsonStr" : {}
+}
+```
+</pre>
+
+<pre>
+```UPDATE
+{
+    "token": "90931714|-31949214282530301|90963650",
+    "cmd": "UPDATE",
+    "dbName": "Employee",
+    "rel": "EmpRel",
+    "jsonStr":{
+      "1": {
+        "name":"Shelby"
+    		}
+		}
+}
+```
+</pre>
+
+<pre>
+```GET_BY_KEY
+{
+    "token": "90931714|-31949214282530301|90963650",
+    "dbName": "Employee",
+    "cmd": "GET_BY_KEY",
+    "rel": "EmpRel",
+    "createTime": true,
+    "updateTime": true,
+    "jsonStr": {
+        "name": "Thomas"
+    }
+
+}
+```
+</pre>
+
+<pre>
+```GET_BY_RECORD
+{
+    "token": "90931714|-31949214282530301|90963650",
+    "dbName": "Employee",
+    "cmd": "GET_BY_RECORD",
+    "rel": "EmpRel",
+    "record": 6,
+    "createTime": true,
+    "updateTime": true
+}
+
+```
+</pre>
+
+
+
+<pre>
+```PUT_ALL
+{
+    "token": "90931714|-31949214282530301|90963650",
+    "cmd": "PUT_ALL",
+    "dbName": "Employee",
+    "rel": "EmpRel",
+    "jsonStr": [
+      {
+        "name": "Soniya",
+        "email": "soniya@gmail.com",
+        "mobileno": "9967825671"
+      },
+      {
+        "name": "Thomas",
+        "email": "Thomas@gmail.com",
+        "mobileno": "123456789"
+      }
+      {
+        "name": "Tommy",
+        "email": "Tommy@gmail.com",
+        "mobileno": "789456123"
+      }
+      {
+        "name": "Munna",
+        "email": "Munna@gmail.com",
+        "mobileno": "4562478961"
+      }
+      ]
+}
+```
+</pre>
